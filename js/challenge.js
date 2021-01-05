@@ -41,4 +41,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
+  submitButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    const p = document.createElement('p');
+    p.innerText = commentForm.querySelector('input').value;
+    document.getElementById('list').appendChild(p);
+    commentForm.reset();
+  });
+
 });
