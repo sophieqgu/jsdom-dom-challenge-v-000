@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
       heart.disabled = true;
       submitButton.disabled = true;
     } else {
-      //count.reset();
+      counter.innterHTML = 0;
       count = setInterval(() => {
         counter.innerHTML++
       }, 1000)
