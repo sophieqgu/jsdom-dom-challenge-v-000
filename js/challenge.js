@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
       minus.disabled = false;
       heart.disabled = false;
       submitButton.disabled = false;
-      document.querySelector('ul.likes').empty();
+      document.querySelector('ul.likes').innerHTML = ""
     }
   });
 
