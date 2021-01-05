@@ -12,4 +12,13 @@ document.addEventListener("DOMContentLoaded", function() {
   let count = setInterval(() => {
     counter.innterHTML++
   }, 1000);
+
+  plus.addEventListener('click', () => {
+    counter.innerHTML++
+  });
+
+  minus.addEventListener('click', ()=> {
+    counter.innerHTML--
+  });
+
 });
