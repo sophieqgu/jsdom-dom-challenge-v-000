@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
   })
 
   pause.addEventListener('click', () => {
-    if(pause.innerText === "pause"){
+    if (pause.innerText === "pause") {
       clearInterval(count)
 
       pause.innerHTML = "resume";
