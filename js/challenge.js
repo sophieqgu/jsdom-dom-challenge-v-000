@@ -35,13 +35,13 @@ document.addEventListener("DOMContentLoaded", function() {
         counter.innerHTML++
       }, 1000);
       pause.innerHTML = "pause";
-      if (document.getElementById(`${num}`)) {
-        document.getElementById(`${num}`).remove();
-      }
       plus.disabled = false;
       minus.disabled = false;
       heart.disabled = false;
       submitButton.disabled = false;
+      if (document.getElementById(`${num}`)) {
+        document.getElementById(`${num}`).remove();
+      }
     }
   });
 
