@@ -21,4 +21,24 @@ document.addEventListener("DOMContentLoaded", function() {
     counter.innerHTML--
   });
 
+  pause.addEventListener('click', () => {
+    if (pause.innerText === "pause") {
+      clearInterval(count)
+      pause.innerHTML = "resume";
+      plus.disabled = true;
+      minus.disabled = true;
+      heart.disabled = true;
+      submitButton.disabled = true;
+    } else {
+      count = setInterval(() => {
+        counter.innerHTML++
+      }, 1000)
+      pause.innerHTML = "pause"
+      plus.disabled = false;
+      minus.disabled = false;
+      heart.disabled = false;
+      submitButton.disabled = false;
+    }
+  });
+
 });
