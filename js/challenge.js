@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const counter = getElementById('counter');
-  const plus = document.getElementById('plus');
-  const minus = document.getElementById('minus');
-  const heart = document.getElementById('heart');
-  const pause = document.getElementById('pause');
-  const likes = document.querySelector('likes');
+  let counter = getElementById('counter');
+  let plus = document.getElementById('plus');
+  let minus = document.getElementById('minus');
+  let heart = document.getElementById('heart');
+  let pause = document.getElementById('pause');
+  let likes = document.querySelector('likes');
 
-  const submitButton = document.getElementById('submit');
-  const commentForm = document.getElementById('comment-form');
+  let submitButton = document.getElementById('submit');
+  let commentForm = document.getElementById('comment-form');
 
   let count = setInterval(() => {
     counter.innterHTML++
