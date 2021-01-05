@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
         counter.innerHTML++
       }, 1000);
       pause.innerHTML = "pause";
+      document.getElementById(`${num}`).remove();
       plus.disabled = false;
       minus.disabled = false;
       heart.disabled = false;
